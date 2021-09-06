@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct HomeView: View {
+struct MainView: View {
     
     enum Tab {
         case home
@@ -20,7 +20,7 @@ struct HomeView: View {
         TabView(selection: $tab) {
             
             NavigationView {
-                Text("Home")
+                PaginaInicioView()
             }
             .tabItem {
                 let menuText = Text("Home", comment: "Home")
@@ -51,6 +51,6 @@ struct HomeView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        MainView()
     }
 }
