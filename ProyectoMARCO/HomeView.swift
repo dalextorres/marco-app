@@ -20,7 +20,7 @@ struct HomeView: View {
         TabView(selection: $tab) {
             
             NavigationView {
-                Text("Home")
+                PaginaInicioView()
             }
             .tabItem {
                 let menuText = Text("Home", comment: "Home")
