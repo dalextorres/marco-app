@@ -22,6 +22,7 @@ struct MainView: View {
             NavigationView {
                 PaginaInicioView()
             }
+            //Icono de home
             .tabItem {
                 let menuText = Text("Home", comment: "Home")
                 Label {
@@ -31,16 +32,20 @@ struct MainView: View {
                 }
             }
             .tag(Tab.home)
-            
-            NavigationView {
-                Text("Other")
+
+            NavigationView{
+                Text("Store")
             }
+            //Icono de Store
             .tabItem {
-                let menuText = Text("Other", comment: "Other")
+                let menuText = Text("Store", comment: "Store")
                 Label {
                     menuText
                 } icon: {
-                    Image(systemName: "house")
+                    Image(systemName: "cart").onTapGesture {
+                        UIApplication.shared.open(URL(string: "https://storemarco.art")!)
+                    }
+                    
                 }
             }
             .tag(Tab.other)
