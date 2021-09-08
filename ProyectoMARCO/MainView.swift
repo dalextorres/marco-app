@@ -9,8 +9,18 @@ import SwiftUI
 
 struct MainView: View {
     
+    init() {
+        let tabBarAppearance = UITabBarAppearance()
+        
+        tabBarAppearance.backgroundColor = UIColor(Color("Rosa"))
+        
+        UITabBar.appearance().standardAppearance = tabBarAppearance
+    }
+    
     enum Tab {
         case home
+        case museo
+        case restaurante
         case other
     }
     
@@ -18,7 +28,6 @@ struct MainView: View {
     
     var body: some View {
         TabView(selection: $tab) {
-            
             NavigationView {
                 PaginaInicioView()
             }
@@ -27,10 +36,36 @@ struct MainView: View {
                 Label {
                     menuText
                 } icon: {
-                    Image(systemName: "house")
+                    Image(systemName: "house.fill")
                 }
             }
             .tag(Tab.home)
+            
+            NavigationView {
+                PaginaMuseoView()
+            }
+            .tabItem {
+                let menuText = Text("Museo", comment: "Musseo")
+                Label {
+                    menuText
+                } icon: {
+                    Image(systemName: "house")
+                }
+            }
+            .tag(Tab.museo)
+            
+            NavigationView {
+                RestauranteView()
+            }
+            .tabItem {
+                let menuText = Text("Restaurante", comment: "Restaurante")
+                Label {
+                    menuText
+                } icon: {
+                    Image(systemName: "circle")
+                }
+            }
+            .tag(Tab.restaurante)
             
             NavigationView {
                 PaginaLoginView()
@@ -45,8 +80,9 @@ struct MainView: View {
                 }
             }
             .tag(Tab.other)
-            
         }
+        .accentColor(.black)
+        .navigationAppearance(backgroundColor: UIColor(Color("Rosa")), foregroundColor: .white, tintColor: .white, hideSeparator: true)
     }
 }
 

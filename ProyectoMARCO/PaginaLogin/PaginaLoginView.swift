@@ -66,6 +66,14 @@ struct PaginaLoginView: View {
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .padding()
+        .navigationBarTitleDisplayMode(.inline)
+        .toolbar(content: {
+            ToolbarItem(placement: .principal, content: {
+                HStack{
+                    Text("Museo").foregroundColor(.white)
+                }
+            })
+        })
         
         
         }
