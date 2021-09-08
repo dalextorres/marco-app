@@ -8,8 +8,29 @@
 import SwiftUI
 
 struct RestauranteView: View {
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        VStack {
+            
+            Image("MenuMarco")
+                .resizable()
+                .scaledToFit()
+                .frame(height: 280)
+                .padding()
+                .onTapGesture {
+                    UIApplication.shared.open(URL(string: "https://www.marco.org.mx/wp-content/uploads/2021/07/menu-restaurante1.pdf")!)
+                }
+            
+            NavigationLink(destination: ReservaMesaView(), label: {
+                Image("RestauranteMarco")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(height: 280)
+                    .padding()
+            })
+        }
+        
     }
 }
 
