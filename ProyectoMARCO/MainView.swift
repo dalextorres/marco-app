@@ -33,14 +33,15 @@ struct MainView: View {
             .tag(Tab.home)
             
             NavigationView {
-                Text("Other")
+                PaginaLoginView()
+                .navigationBarHidden(true)
             }
             .tabItem {
-                let menuText = Text("Other", comment: "Other")
+                let menuText = Text("Login", comment: "Login")
                 Label {
                     menuText
                 } icon: {
-                    Image(systemName: "house")
+                    Image(systemName: "person")
                 }
             }
             .tag(Tab.other)
