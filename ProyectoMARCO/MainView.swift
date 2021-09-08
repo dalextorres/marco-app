@@ -33,14 +33,14 @@ struct MainView: View {
             .tag(Tab.home)
             
             NavigationView {
-                Text("Other")
+                RestauranteView()
             }
             .tabItem {
                 let menuText = Text("Other", comment: "Other")
                 Label {
                     menuText
                 } icon: {
-                    Image(systemName: "house")
+                    Image(systemName: "menucard")
                 }
             }
             .tag(Tab.other)

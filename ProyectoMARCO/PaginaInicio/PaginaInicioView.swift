@@ -35,7 +35,7 @@ struct PaginaInicioView: View {
                 
                 VStack {
                     CardView()
-                    RestauranteView()
+                    CardView()
                 }
                 
                 Spacer()
