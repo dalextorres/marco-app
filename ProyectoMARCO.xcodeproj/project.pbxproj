@@ -11,6 +11,7 @@
 		A51A9EAC26E5D306003213EC /* PaginaInicioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51A9EAB26E5D306003213EC /* PaginaInicioView.swift */; };
 		A51A9EB026E5D6AE003213EC /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51A9EAF26E5D6AE003213EC /* CardView.swift */; };
 		E64642A626E67F8D005C3DCD /* RestauranteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64642A526E67F8D005C3DCD /* RestauranteView.swift */; };
+		E650490426E9284900593255 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E650490326E9284900593255 /* WebView.swift */; };
 		E6D1947F26E2A96B001BFA02 /* ProyectoMARCOApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D1947E26E2A96B001BFA02 /* ProyectoMARCOApp.swift */; };
 		E6D1948126E2A96B001BFA02 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D1948026E2A96B001BFA02 /* MainView.swift */; };
 		E6D1948326E2A96E001BFA02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6D1948226E2A96E001BFA02 /* Assets.xcassets */; };
@@ -30,6 +31,7 @@
 		A51A9EAB26E5D306003213EC /* PaginaInicioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginaInicioView.swift; sourceTree = "<group>"; };
 		A51A9EAF26E5D6AE003213EC /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		E64642A526E67F8D005C3DCD /* RestauranteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestauranteView.swift; sourceTree = "<group>"; };
+		E650490326E9284900593255 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		E6D1947B26E2A96B001BFA02 /* ProyectoMARCO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProyectoMARCO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6D1947E26E2A96B001BFA02 /* ProyectoMARCOApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProyectoMARCOApp.swift; sourceTree = "<group>"; };
 		E6D1948026E2A96B001BFA02 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				E64642A426E67F7E005C3DCD /* Restaurante */,
 				E6D1947E26E2A96B001BFA02 /* ProyectoMARCOApp.swift */,
 				E6D1948026E2A96B001BFA02 /* MainView.swift */,
+				E650490326E9284900593255 /* WebView.swift */,
 				FED8C38926E8724F0003086B /* NavApperanceModifier.swift */,
 				E6D1948226E2A96E001BFA02 /* Assets.xcassets */,
 				E6D1948726E2A96E001BFA02 /* Info.plist */,
@@ -207,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B7BAA5326E7E05A00150849 /* PaginaLoginView.swift in Sources */,
+				E650490426E9284900593255 /* WebView.swift in Sources */,
 				E6F56C8026E7CBE90051F30D /* MenuView.swift in Sources */,
 				E6F56C8226E7CBFB0051F30D /* ReservaMesaView.swift in Sources */,
 				FED8C38C26E89F6C0003086B /* CursosView.swift in Sources */,
