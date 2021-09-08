@@ -1,6 +1,5 @@
 //
 //  NavAppereanceModifier.swift
-//  App05-Entrenimiento
 //
 //
 

@@ -9,7 +9,22 @@ import SwiftUI
 
 struct RecorridoVirtualView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            Text("ENTRA AL MUSEO")
+                .font(.largeTitle)
+                .fontWeight(.bold)
+                .frame(height: 80)
+                .padding()
+            
+        }
+        .navigationBarTitleDisplayMode(.inline)
+        .toolbar(content: {
+            ToolbarItem(placement: .principal, content: {
+                HStack{
+                    Text("Museo").foregroundColor(.white)
+                }
+            })
+        })
     }
 }
 

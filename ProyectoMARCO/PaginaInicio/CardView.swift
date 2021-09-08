@@ -14,6 +14,7 @@ struct CardView: View {
             .frame(height: 350)
             .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
             .padding()
+            .shadow(radius: 10)
     }
 }
 

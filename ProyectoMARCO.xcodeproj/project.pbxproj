@@ -12,7 +12,12 @@
 		E6D1947F26E2A96B001BFA02 /* ProyectoMARCOApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D1947E26E2A96B001BFA02 /* ProyectoMARCOApp.swift */; };
 		E6D1948126E2A96B001BFA02 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D1948026E2A96B001BFA02 /* MainView.swift */; };
 		E6D1948326E2A96E001BFA02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6D1948226E2A96E001BFA02 /* Assets.xcassets */; };
-		E6D1948626E2A96E001BFA02 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6D1948526E2A96E001BFA02 /* Preview Assets.xcassets */; };
+		FE43C55526E6EFD400445FA9 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE43C55426E6EFD400445FA9 /* Button.swift */; };
+		FE43C55726E6F93500445FA9 /* AgendaVisitasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE43C55626E6F93500445FA9 /* AgendaVisitasView.swift */; };
+		FE43C55926E7280D00445FA9 /* RecorridoVirtualView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE43C55826E7280D00445FA9 /* RecorridoVirtualView.swift */; };
+		FE43C55B26E73EBC00445FA9 /* NavAppereanceModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE43C55A26E73EBC00445FA9 /* NavAppereanceModifier.swift */; };
+		FE4C8EE226E842670053A5EE /* PaginaMuseoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4C8EE126E842670053A5EE /* PaginaMuseoView.swift */; };
+		FE4C8EE326E843C30053A5EE /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E6D1948726E2A96E001BFA02 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,8 +27,12 @@
 		E6D1947E26E2A96B001BFA02 /* ProyectoMARCOApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProyectoMARCOApp.swift; sourceTree = "<group>"; };
 		E6D1948026E2A96B001BFA02 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		E6D1948226E2A96E001BFA02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E6D1948526E2A96E001BFA02 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E6D1948726E2A96E001BFA02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE43C55426E6EFD400445FA9 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		FE43C55626E6F93500445FA9 /* AgendaVisitasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaVisitasView.swift; sourceTree = "<group>"; };
+		FE43C55826E7280D00445FA9 /* RecorridoVirtualView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecorridoVirtualView.swift; sourceTree = "<group>"; };
+		FE43C55A26E73EBC00445FA9 /* NavAppereanceModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavAppereanceModifier.swift; sourceTree = "<group>"; };
+		FE4C8EE126E842670053A5EE /* PaginaMuseoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaginaMuseoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,9 +74,11 @@
 		E6D1947D26E2A96B001BFA02 /* ProyectoMARCO */ = {
 			isa = PBXGroup;
 			children = (
+				FE43C55126E6EACB00445FA9 /* Museo */,
 				A51A9EAA26E5D288003213EC /* PaginaInicio */,
 				E6D1947E26E2A96B001BFA02 /* ProyectoMARCOApp.swift */,
 				E6D1948026E2A96B001BFA02 /* MainView.swift */,
+				FE43C55A26E73EBC00445FA9 /* NavAppereanceModifier.swift */,
 				E6D1948226E2A96E001BFA02 /* Assets.xcassets */,
 				E6D1948726E2A96E001BFA02 /* Info.plist */,
 				E6D1948426E2A96E001BFA02 /* Preview Content */,
@@ -78,9 +89,19 @@
 		E6D1948426E2A96E001BFA02 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				E6D1948526E2A96E001BFA02 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FE43C55126E6EACB00445FA9 /* Museo */ = {
+			isa = PBXGroup;
+			children = (
+				FE4C8EE126E842670053A5EE /* PaginaMuseoView.swift */,
+				FE43C55826E7280D00445FA9 /* RecorridoVirtualView.swift */,
+				FE43C55626E6F93500445FA9 /* AgendaVisitasView.swift */,
+				FE43C55426E6EFD400445FA9 /* Button.swift */,
+			);
+			path = Museo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +161,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E6D1948626E2A96E001BFA02 /* Preview Assets.xcassets in Resources */,
+				FE4C8EE326E843C30053A5EE /* Info.plist in Resources */,
 				E6D1948326E2A96E001BFA02 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -152,10 +173,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE43C55926E7280D00445FA9 /* RecorridoVirtualView.swift in Sources */,
 				E6D1948126E2A96B001BFA02 /* MainView.swift in Sources */,
+				FE43C55526E6EFD400445FA9 /* Button.swift in Sources */,
+				FE43C55B26E73EBC00445FA9 /* NavAppereanceModifier.swift in Sources */,
+				FE4C8EE226E842670053A5EE /* PaginaMuseoView.swift in Sources */,
 				E6D1947F26E2A96B001BFA02 /* ProyectoMARCOApp.swift in Sources */,
 				A51A9EB026E5D6AE003213EC /* CardView.swift in Sources */,
 				A51A9EAC26E5D306003213EC /* PaginaInicioView.swift in Sources */,
+				FE43C55726E6F93500445FA9 /* AgendaVisitasView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

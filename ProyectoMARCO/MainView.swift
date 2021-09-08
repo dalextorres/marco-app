@@ -9,9 +9,21 @@ import SwiftUI
 
 struct MainView: View {
     
+    init() {
+        
+        let tabBarAppearance = UITabBarAppearance()
+        
+        tabBarAppearance.backgroundColor = UIColor(Color("Rosa"))
+        
+        //UITabBar.appearance().unselectedItemTintColor = UIColor(.white)
+        
+        UITabBar.appearance().standardAppearance = tabBarAppearance
+    }
+
+    
     enum Tab {
         case home
-        case other
+        case museo
     }
     
     @State private var tab : Tab = .home
@@ -27,25 +39,27 @@ struct MainView: View {
                 Label {
                     menuText
                 } icon: {
-                    Image(systemName: "house")
+                    Image(systemName: "house.fill")
                 }
             }
             .tag(Tab.home)
+            .navigationAppearance(backgroundColor: UIColor(Color("Rosa")), foregroundColor: .white, tintColor: .white, hideSeparator: true)
             
             NavigationView {
-                Text("Other")
+                PaginaMuseoView()
             }
             .tabItem {
-                let menuText = Text("Other", comment: "Other")
+                let menuText = Text("Museo", comment: "Museo")
                 Label {
                     menuText
                 } icon: {
                     Image(systemName: "house")
                 }
             }
-            .tag(Tab.other)
+            .tag(Tab.museo)
             
         }
+        .accentColor(Color(.black))
     }
 }
 

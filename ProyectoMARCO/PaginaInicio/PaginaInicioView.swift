@@ -13,6 +13,7 @@ struct PaginaInicioView: View {
     
     var body: some View {
         ScrollView {
+            Color("Blanco").ignoresSafeArea()
             VStack {
                 Text("HOY EN MARCO")
                     .font(.title)
@@ -39,7 +40,14 @@ struct PaginaInicioView: View {
                 }
                 
                 Spacer()
-            }
+            }.navigationBarTitleDisplayMode(.inline)
+            .toolbar(content: {
+                ToolbarItem(placement: .principal, content: {
+                    HStack{
+                        Text("Home").foregroundColor(.white)
+                    }
+                })
+            })
         }
     }
 }
