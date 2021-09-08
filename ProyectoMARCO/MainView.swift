@@ -21,6 +21,7 @@ struct MainView: View {
         case home
         case museo
         case restaurante
+        case login
         case other
     }
     
@@ -55,21 +56,7 @@ struct MainView: View {
             .tag(Tab.museo)
             
             NavigationView {
-                RestauranteView()
-            }
-            .tabItem {
-                let menuText = Text("Restaurante", comment: "Restaurante")
-                Label {
-                    menuText
-                } icon: {
-                    Image(systemName: "circle")
-                }
-            }
-            .tag(Tab.restaurante)
-            
-            NavigationView {
                 PaginaLoginView()
-                .navigationBarHidden(true)
             }
             .tabItem {
                 let menuText = Text("Login", comment: "Login")
@@ -79,7 +66,21 @@ struct MainView: View {
                     Image(systemName: "person")
                 }
             }
-            .tag(Tab.other)
+            .tag(Tab.login)
+            
+            NavigationView {
+                RestauranteView()
+            }
+            .tabItem {
+                let menuText = Text("Restaurant", comment: "Restaurant")
+                Label {
+                    menuText
+                } icon: {
+                    Image(systemName: "fork.knife")
+                }
+            }
+            .tag(Tab.restaurante)
+            
         }
         .accentColor(.black)
         .navigationAppearance(backgroundColor: UIColor(Color("Rosa")), foregroundColor: .white, tintColor: .white, hideSeparator: true)
