@@ -9,8 +9,19 @@ import SwiftUI
 
 struct MainView: View {
     
+    init() {
+        let tabBarAppearance = UITabBarAppearance()
+        
+        tabBarAppearance.backgroundColor = UIColor(Color("Rosa"))
+        
+        UITabBar.appearance().standardAppearance = tabBarAppearance
+    }
+    
     enum Tab {
         case home
+        case museo
+        case restaurante
+        case login
         case other
     }
     
@@ -18,7 +29,6 @@ struct MainView: View {
     
     var body: some View {
         TabView(selection: $tab) {
-            
             NavigationView {
                 PaginaInicioView()
             }
@@ -27,25 +37,53 @@ struct MainView: View {
                 Label {
                     menuText
                 } icon: {
-                    Image(systemName: "house")
+                    Image(systemName: "house.fill")
                 }
             }
             .tag(Tab.home)
             
             NavigationView {
-                Text("Other")
+                PaginaMuseoView()
             }
             .tabItem {
-                let menuText = Text("Other", comment: "Other")
+                let menuText = Text("Museo", comment: "Musseo")
                 Label {
                     menuText
                 } icon: {
                     Image(systemName: "house")
                 }
             }
-            .tag(Tab.other)
+            .tag(Tab.museo)
+            
+            NavigationView {
+                PaginaLoginView()
+            }
+            .tabItem {
+                let menuText = Text("Login", comment: "Login")
+                Label {
+                    menuText
+                } icon: {
+                    Image(systemName: "person")
+                }
+            }
+            .tag(Tab.login)
+            
+            NavigationView {
+                RestauranteView()
+            }
+            .tabItem {
+                let menuText = Text("Restaurant", comment: "Restaurant")
+                Label {
+                    menuText
+                } icon: {
+                    Image(systemName: "fork.knife")
+                }
+            }
+            .tag(Tab.restaurante)
             
         }
+        .accentColor(.black)
+        .navigationAppearance(backgroundColor: UIColor(Color("Rosa")), foregroundColor: .white, tintColor: .white, hideSeparator: true)
     }
 }
 

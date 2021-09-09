@@ -60,7 +60,14 @@ struct PaginaInicioView: View {
                 }
                 
                 Spacer()
-            }
+            }.navigationBarTitleDisplayMode(.inline)
+            .toolbar(content: {
+                ToolbarItem(placement: .principal, content: {
+                    HStack{
+                        Text("Home").foregroundColor(.white)
+                    }
+                })
+            })
         }
     }
 }
