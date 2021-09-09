@@ -45,7 +45,7 @@ struct PaginaMuseoView: View {
         .toolbar(content: {
             ToolbarItem(placement: .principal, content: {
                 HStack{
-                    Text("Museo").foregroundColor(.white)
+                    TopToolbarView()
                 }
             })
         })

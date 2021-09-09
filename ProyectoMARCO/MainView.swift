@@ -10,19 +10,17 @@ import SwiftUI
 struct MainView: View {
     
     init() {
-        let tabBarAppearance = UITabBarAppearance()
         
-        tabBarAppearance.backgroundColor = UIColor(Color("Rosa"))
+        UITabBar.appearance().barTintColor = UIColor(Color("Rosa"))
+        UITabBar.appearance().unselectedItemTintColor = UIColor.white
         
-        UITabBar.appearance().standardAppearance = tabBarAppearance
     }
     
     enum Tab {
         case home
         case museo
         case restaurante
-        case login
-        case other
+        case shop
     }
     
     @State private var tab : Tab = .home
@@ -46,40 +44,40 @@ struct MainView: View {
                 PaginaMuseoView()
             }
             .tabItem {
-                let menuText = Text("Museo", comment: "Musseo")
+                let menuText = Text("Museo", comment: "Museo")
                 Label {
                     menuText
                 } icon: {
-                    Image(systemName: "house")
+                    Image(systemName: "paintpalette.fill")
                 }
             }
             .tag(Tab.museo)
             
             NavigationView {
-                PaginaLoginView()
-            }
-            .tabItem {
-                let menuText = Text("Login", comment: "Login")
-                Label {
-                    menuText
-                } icon: {
-                    Image(systemName: "person")
-                }
-            }
-            .tag(Tab.login)
-            
-            NavigationView {
                 RestauranteView()
             }
             .tabItem {
-                let menuText = Text("Restaurant", comment: "Restaurant")
+                let menuText = Text("Restaurante", comment: "Restaurante")
                 Label {
                     menuText
                 } icon: {
-                    Image(systemName: "fork.knife")
+                    Image("fork.knife").font(.title2)
                 }
             }
             .tag(Tab.restaurante)
+            
+            NavigationView {
+                PaginaMuseoView()
+            }
+            .tabItem {
+                let menuText = Text("Tienda", comment: "Tienda")
+                Label {
+                    menuText
+                } icon: {
+                    Image(systemName: "cart.fill")
+                }
+            }
+            .tag(Tab.shop)
             
         }
         .accentColor(.black)

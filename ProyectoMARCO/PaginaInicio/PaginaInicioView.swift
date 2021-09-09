@@ -60,12 +60,12 @@ struct PaginaInicioView: View {
                 }
                 
                 Spacer()
-            }.navigationBarTitleDisplayMode(.inline)
+            }
+            .padding()
+            .navigationBarTitleDisplayMode(.inline)
             .toolbar(content: {
                 ToolbarItem(placement: .principal, content: {
-                    HStack{
-                        Text("Home").foregroundColor(.white)
-                    }
+                    TopToolbarView()
                 })
             })
         }

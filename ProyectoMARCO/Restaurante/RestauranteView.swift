@@ -49,9 +49,7 @@ struct RestauranteView: View {
         .navigationBarTitleDisplayMode(.inline)
         .toolbar(content: {
             ToolbarItem(placement: .principal, content: {
-                HStack{
-                    Text("Restaurante").foregroundColor(.white)
-                }
+                TopToolbarView()
             })
         })
     }
