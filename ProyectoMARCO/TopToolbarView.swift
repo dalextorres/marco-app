@@ -10,14 +10,14 @@ import SwiftUI
 struct TopToolbarView: View {
     var body: some View {
         
-        VStack {
-            ZStack {
+        
+            HStack {
                 HStack {
                     Image("LogoMarco")
                         .resizable()
                         .frame(width: CGFloat(30), height: CGFloat(30), alignment: .center)
                 }
-            
+                Spacer()
                 HStack {
                     Spacer()
                     NavigationLink(destination: PaginaLoginView(), label: {
@@ -27,7 +27,7 @@ struct TopToolbarView: View {
                     }).padding(.trailing, CGFloat(20))
                 }
             }
-        }
+        
     }
 }
 

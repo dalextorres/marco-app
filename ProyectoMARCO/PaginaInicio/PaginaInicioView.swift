@@ -61,13 +61,28 @@ struct PaginaInicioView: View {
                 
                 Spacer()
             }
-            .padding()
+//            .padding()
             .navigationBarTitleDisplayMode(.inline)
-            .toolbar(content: {
-                ToolbarItem(placement: .principal, content: {
-                    TopToolbarView()
-                })
-            })
+            .toolbar {
+//                content: {
+//                ToolbarItem(placement: .principal, content: {
+//                    TopToolbarView()
+//                })
+//                }
+                ToolbarItem(placement: .principal) {
+                    Image("LogoMarco")
+                        .resizable()
+                        .frame(width: CGFloat(30), height: CGFloat(30), alignment: .center)
+                }
+                
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    NavigationLink(destination: PaginaLoginView(), label: {
+                        Image(systemName: "person.fill")
+                            .resizable()
+                            .frame(width: CGFloat(30), height: CGFloat(30), alignment: .trailing)
+                    }).padding(.trailing, CGFloat(20))
+                }
+            }
         }
     }
 }
