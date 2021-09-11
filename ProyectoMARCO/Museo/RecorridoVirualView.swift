@@ -25,6 +25,7 @@ struct RecorridoVirtualView: View {
                     
                     Text("RECORRE MARCO")
                         .font(.largeTitle)
+                        .fontWeight(.bold)
                         .foregroundColor(Color("Blanco"))
                         .multilineTextAlignment(.center)
                 }

@@ -6,9 +6,9 @@
 import SwiftUI
 
 struct BotonImagen: View {
-    var buttonImage : String
+    var buttonImageName : String
     var body: some View {
-        Image(buttonImage)
+        Image(buttonImageName)
             .resizable()
             .scaledToFit()
             .frame(height: 230)
@@ -19,6 +19,6 @@ struct BotonImagen: View {
 
 struct Button_Previews: PreviewProvider {
     static var previews: some View {
-        BotonImagen(buttonImage: "image 15")
+        BotonImagen(buttonImageName: "image 15")
     }
 }

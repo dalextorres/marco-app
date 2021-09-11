@@ -19,6 +19,9 @@
 		E6D1948626E2A96E001BFA02 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6D1948526E2A96E001BFA02 /* Preview Assets.xcassets */; };
 		E6F56C8026E7CBE90051F30D /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F56C7F26E7CBE90051F30D /* MenuView.swift */; };
 		E6F56C8226E7CBFB0051F30D /* ReservaMesaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F56C8126E7CBFB0051F30D /* ReservaMesaView.swift */; };
+		FE851AAC26EC07670095FA77 /* VisitasMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE851AAB26EC07670095FA77 /* VisitasMenuView.swift */; };
+		FE851AAE26EC23430095FA77 /* VisitasGuiadasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE851AAD26EC23430095FA77 /* VisitasGuiadasView.swift */; };
+		FE851AB026EC2E850095FA77 /* RecuadroVisita.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE851AAF26EC2E850095FA77 /* RecuadroVisita.swift */; };
 		FED8C38226E871800003086B /* AgendaVisitasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED8C38126E871800003086B /* AgendaVisitasView.swift */; };
 		FED8C38426E871B00003086B /* BotonImagen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED8C38326E871B00003086B /* BotonImagen.swift */; };
 		FED8C38626E871E00003086B /* PaginaMuseoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED8C38526E871E00003086B /* PaginaMuseoView.swift */; };
@@ -42,6 +45,9 @@
 		E6D1948726E2A96E001BFA02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6F56C7F26E7CBE90051F30D /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		E6F56C8126E7CBFB0051F30D /* ReservaMesaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservaMesaView.swift; sourceTree = "<group>"; };
+		FE851AAB26EC07670095FA77 /* VisitasMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitasMenuView.swift; sourceTree = "<group>"; };
+		FE851AAD26EC23430095FA77 /* VisitasGuiadasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitasGuiadasView.swift; sourceTree = "<group>"; };
+		FE851AAF26EC2E850095FA77 /* RecuadroVisita.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecuadroVisita.swift; sourceTree = "<group>"; };
 		FED8C38126E871800003086B /* AgendaVisitasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaVisitasView.swift; sourceTree = "<group>"; };
 		FED8C38326E871B00003086B /* BotonImagen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BotonImagen.swift; sourceTree = "<group>"; };
 		FED8C38526E871E00003086B /* PaginaMuseoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginaMuseoView.swift; sourceTree = "<group>"; };
@@ -139,6 +145,9 @@
 				FED8C38526E871E00003086B /* PaginaMuseoView.swift */,
 				FED8C38726E8720E0003086B /* RecorridoVirualView.swift */,
 				FED8C38B26E89F6C0003086B /* CursosView.swift */,
+				FE851AAB26EC07670095FA77 /* VisitasMenuView.swift */,
+				FE851AAD26EC23430095FA77 /* VisitasGuiadasView.swift */,
+				FE851AAF26EC2E850095FA77 /* RecuadroVisita.swift */,
 			);
 			path = Museo;
 			sourceTree = "<group>";
@@ -215,10 +224,13 @@
 				E6B9331926EA7C6A00DD1F1D /* TopToolbarView.swift in Sources */,
 				6B7BAA5326E7E05A00150849 /* PaginaLoginView.swift in Sources */,
 				E650490426E9284900593255 /* WebView.swift in Sources */,
+				FE851AAC26EC07670095FA77 /* VisitasMenuView.swift in Sources */,
+				FE851AB026EC2E850095FA77 /* RecuadroVisita.swift in Sources */,
 				E6F56C8026E7CBE90051F30D /* MenuView.swift in Sources */,
 				E6F56C8226E7CBFB0051F30D /* ReservaMesaView.swift in Sources */,
 				FED8C38C26E89F6C0003086B /* CursosView.swift in Sources */,
 				FED8C38826E8720E0003086B /* RecorridoVirualView.swift in Sources */,
+				FE851AAE26EC23430095FA77 /* VisitasGuiadasView.swift in Sources */,
 				E6D1948126E2A96B001BFA02 /* MainView.swift in Sources */,
 				FED8C38626E871E00003086B /* PaginaMuseoView.swift in Sources */,
 				E6D1948126E2A96B001BFA02 /* MainView.swift in Sources */,

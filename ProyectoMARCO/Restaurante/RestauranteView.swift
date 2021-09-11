@@ -15,10 +15,10 @@ struct RestauranteView: View {
             
             NavigationLink(destination: ReservaMesaView(), label: {
                 ZStack {
-                    Image("RestauranteMarco")
+                    Image("restaurante")
                         .resizable()
                         .scaledToFit()
-                        .frame(height: 280)
+                        .frame(width: 390,height: 280)
                         .padding()
                     
                     Text("APARTA TU MESA")
@@ -32,10 +32,10 @@ struct RestauranteView: View {
             NavigationLink(destination: WebView(html: "https://www.marco.org.mx/wp-content/uploads/2021/07/menu-restaurante1.pdf"),
                 label: {
                     ZStack {
-                        Image("MenuMarco")
+                        Image("image 20")
                             .resizable()
                             .scaledToFit()
-                            .frame(height: 280)
+                            .frame(width: 390,height: 280)
                             .padding()
                         
                         Text("REVISA EL MENU")

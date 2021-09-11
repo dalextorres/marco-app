@@ -9,9 +9,9 @@ import SwiftUI
 struct PaginaMuseoView: View {
     var body: some View {
         VStack{
-            NavigationLink(destination : AgendaVisitasView(nombreVisitante: "", numeroBoletos: 0), label:{
+            NavigationLink(destination : VisitasMenuView(), label:{
                     ZStack{
-                        BotonImagen(buttonImage: "image 15")
+                        BotonImagen(buttonImageName: "image 15")
                         Text("AGENDA TU \nVISITA")
                             .font(.largeTitle)
                             .fontWeight(.bold)
@@ -22,7 +22,7 @@ struct PaginaMuseoView: View {
 
             NavigationLink(destination : RecorridoVirtualView(), label:{
                     ZStack{
-                        BotonImagen(buttonImage: "image 16")
+                        BotonImagen(buttonImageName: "image 16")
                         Text("RECORRIDOS \nVIRTUALES")
                             .font(.largeTitle)
                             .fontWeight(.bold)
@@ -33,7 +33,7 @@ struct PaginaMuseoView: View {
 
             NavigationLink(destination : CursosView(), label:{
                     ZStack{
-                        BotonImagen(buttonImage: "image 17")
+                        BotonImagen(buttonImageName: "image 17")
                         Text("APRENDE EN \nMARCO")
                             .font(.largeTitle)
                             .fontWeight(.bold)
