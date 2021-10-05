@@ -9,10 +9,7 @@ import SwiftUI
 
 struct PaginaLoginView: View {
     
-    @State var name: String = ""
-    @State var lastName: String = ""
-    @State var email: String = ""
-    @State var password: String = ""
+    @EnvironmentObject var loginVM : LoginViewModel
     
     let lightGreyColor = Color(red: 239.0/255.0, green: 243.0/255.0, blue: 244.0/255.0, opacity: 1.0)
     
@@ -21,42 +18,31 @@ struct PaginaLoginView: View {
             Text("BIENVENIDO")
                 .multilineTextAlignment(.center)
                 .font(.custom("Roboto Mono", size: 25))
-                .padding(.bottom, 70)
+                .padding(.bottom, 30)
     
-
-            TextField("Nombre",  text: $name)
+            TextField("Correo electronico", text: $loginVM.email)
                 .padding(4)
                 .background(lightGreyColor)
                 .cornerRadius(5.0)
                 .font(.custom("Roboto Mono", size: 17))
                 .frame(height: 50)
-            TextField("Apellido", text: $lastName)
-                .padding(4)
-                .background(lightGreyColor)
-                .cornerRadius(5.0)
-                .font(.custom("Roboto Mono", size: 17))
-                .frame(height: 50)
-            TextField("Correo electronico", text: $email)
-                .padding(4)
-                .background(lightGreyColor)
-                .cornerRadius(5.0)
-                .font(.custom("Roboto Mono", size: 17))
-                .frame(height: 50)
-            TextField("Contrasena", text: $password)
+            SecureField("Contrasena", text: $loginVM.password)
                 .padding(4)
                 .background(lightGreyColor)
                 .cornerRadius(5.0)
                 .font(.custom("Roboto Mono", size: 17))
                 .frame(height: 50)
             
-            Button(action: {print("Boton presionado")}) {
-                Text("CONFIRMAR")
+            Button(action: {
+                    loginVM.login()
+            }, label: {
+                Text("LOGIN")
                     .foregroundColor(.white)
                     .padding(.horizontal, 20)
                     .padding(.vertical, 5)
                     .font(.custom("Roboto Mono", size: 19))
                 
-            }
+            })
             .background(Color("Rosa"))
             .cornerRadius(5)
             
