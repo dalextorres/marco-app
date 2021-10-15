@@ -15,7 +15,7 @@ class SignupViewModel : ObservableObject {
     
     func signup() {
         
-        Webservice().signup(nombre: nombre, email: email, password: password, tipo: tipo) { result in
+        AuthWebService().signup(nombre: nombre, email: email, password: password, tipo: tipo) { result in
             switch result {
             case .success(let message):
                 print(message)

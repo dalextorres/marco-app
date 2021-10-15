@@ -34,7 +34,7 @@ struct SignupResponse: Codable {
     let success: Bool?
 }
 
-class Webservice {
+class AuthWebService {
     func login(email: String, password: String, completion: @escaping (Result<String, AuthenticationError>) -> Void) {
         guard let url = URL(string: "http://localhost:4000/users/loginUser") else {
             completion(.failure(.custom(errorMessage: "URL is not Correct")))

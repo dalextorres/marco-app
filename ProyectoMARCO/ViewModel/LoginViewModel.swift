@@ -14,7 +14,7 @@ class LoginViewModel : ObservableObject {
     
     func login() {
         
-        Webservice().login(email: email, password: password) { result in
+        AuthWebService().login(email: email, password: password) { result in
             switch result {
             case .success(let message):
                 print(message)
