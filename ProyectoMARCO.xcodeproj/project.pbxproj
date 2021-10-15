@@ -14,6 +14,8 @@
 		E650490426E9284900593255 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E650490326E9284900593255 /* WebView.swift */; };
 		E65EB1AF270C020600E1B5BD /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65EB1AE270C020600E1B5BD /* LoginViewModel.swift */; };
 		E65EB1B2270C031800E1B5BD /* WebServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65EB1B1270C031800E1B5BD /* WebServices.swift */; };
+		E66ACD50271915F2004FEE50 /* PaginaSignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66ACD4F271915F2004FEE50 /* PaginaSignupView.swift */; };
+		E66ACD5227191656004FEE50 /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66ACD5127191656004FEE50 /* SignupViewModel.swift */; };
 		E6B9331926EA7C6A00DD1F1D /* TopToolbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B9331826EA7C6A00DD1F1D /* TopToolbarView.swift */; };
 		E6D1947F26E2A96B001BFA02 /* ProyectoMARCOApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D1947E26E2A96B001BFA02 /* ProyectoMARCOApp.swift */; };
 		E6D1948126E2A96B001BFA02 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D1948026E2A96B001BFA02 /* MainView.swift */; };
@@ -40,6 +42,8 @@
 		E650490326E9284900593255 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		E65EB1AE270C020600E1B5BD /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		E65EB1B1270C031800E1B5BD /* WebServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServices.swift; sourceTree = "<group>"; };
+		E66ACD4F271915F2004FEE50 /* PaginaSignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginaSignupView.swift; sourceTree = "<group>"; };
+		E66ACD5127191656004FEE50 /* SignupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewModel.swift; sourceTree = "<group>"; };
 		E6B9331826EA7C6A00DD1F1D /* TopToolbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TopToolbarView.swift; path = ProyectoMARCO/TopToolbarView.swift; sourceTree = SOURCE_ROOT; };
 		E6D1947B26E2A96B001BFA02 /* ProyectoMARCO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProyectoMARCO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6D1947E26E2A96B001BFA02 /* ProyectoMARCOApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProyectoMARCOApp.swift; sourceTree = "<group>"; };
@@ -102,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				E65EB1AE270C020600E1B5BD /* LoginViewModel.swift */,
+				E66ACD5127191656004FEE50 /* SignupViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -112,6 +117,14 @@
 				E65EB1B1270C031800E1B5BD /* WebServices.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		E66ACD4E271915D8004FEE50 /* PaginaSignup */ = {
+			isa = PBXGroup;
+			children = (
+				E66ACD4F271915F2004FEE50 /* PaginaSignupView.swift */,
+			);
+			path = PaginaSignup;
 			sourceTree = "<group>";
 		};
 		E6D1947226E2A96B001BFA02 = {
@@ -133,6 +146,7 @@
 		E6D1947D26E2A96B001BFA02 /* ProyectoMARCO */ = {
 			isa = PBXGroup;
 			children = (
+				E66ACD4E271915D8004FEE50 /* PaginaSignup */,
 				E65EB1B0270C02FC00E1B5BD /* Services */,
 				E65EB1AD270C019E00E1B5BD /* ViewModel */,
 				FED8C37E26E8712C0003086B /* Museo */,
@@ -261,7 +275,9 @@
 				FED8C38A26E8724F0003086B /* NavApperanceModifier.swift in Sources */,
 				E6D1947F26E2A96B001BFA02 /* ProyectoMARCOApp.swift in Sources */,
 				FED8C38226E871800003086B /* AgendaVisitasView.swift in Sources */,
+				E66ACD5227191656004FEE50 /* SignupViewModel.swift in Sources */,
 				A51A9EB026E5D6AE003213EC /* CardView.swift in Sources */,
+				E66ACD50271915F2004FEE50 /* PaginaSignupView.swift in Sources */,
 				A51A9EAC26E5D306003213EC /* PaginaInicioView.swift in Sources */,
 				FED8C38426E871B00003086B /* BotonImagen.swift in Sources */,
 				E65EB1AF270C020600E1B5BD /* LoginViewModel.swift in Sources */,

@@ -10,17 +10,22 @@ import Foundation
 class LoginViewModel : ObservableObject {
     var email = ""
     var password = ""
+    @Published var isLoggedIn = false
     
     func login() {
         
         Webservice().login(email: email, password: password) { result in
             switch result {
-            case .success(let token):
-                print(token)
-                print("Login exitoso")
+            case .success(let message):
+                print(message)
+                DispatchQueue.main.async {
+                    self.isLoggedIn = true
+                }
             case .failure(let error):
                 print(error.localizedDescription)
-                print("Login fallo")
+                DispatchQueue.main.async {
+                    self.isLoggedIn = false
+                }
             }
         }
         

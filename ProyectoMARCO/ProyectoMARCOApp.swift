@@ -11,17 +11,17 @@ import SwiftUI
 struct ProyectoMARCOApp: App {
     
     @StateObject var loginVM = LoginViewModel()
-    
-    var islogged = false
+    @StateObject var signupVM = SignupViewModel()
     
     var body: some Scene {
         WindowGroup {
-            if(islogged) {
+            if(loginVM.isLoggedIn) {
                 MainView()
                     .environmentObject(loginVM)
             } else {
                 PaginaLoginView()
                     .environmentObject(loginVM)
+                    .environmentObject(signupVM)
             }
         }
     }
