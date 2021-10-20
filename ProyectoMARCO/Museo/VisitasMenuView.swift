@@ -7,10 +7,10 @@
 
 import SwiftUI
 
-struct VisitasMenuView: View {
+struct VisitasMenuView: View {	
     var body: some View {
         VStack{
-            NavigationLink(destination : AgendaVisitasView(nombreVisitante: "", numeroBoletos: 0) , label:{
+            NavigationLink(destination : MarcoBoletosView() , label:{
                     ZStack{
                         Image("visitamarco 1")
                             .resizable()
@@ -26,7 +26,7 @@ struct VisitasMenuView: View {
                     }
             })
             
-            NavigationLink(destination : VisitasGuiadasView(), label:{
+            NavigationLink(destination : AgendaVisitasView(nombreVisitante: "", numeroBoletos: 0), label:{
                     ZStack{
                         Image("image 22")
                             .resizable()

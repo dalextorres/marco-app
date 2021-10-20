@@ -67,7 +67,7 @@ struct MainView: View {
             .tag(Tab.restaurante)
             
             NavigationView {
-                PaginaMuseoView()
+                MarcoTiendaView()
             }
             .tabItem {
                 let menuText = Text("Tienda", comment: "Tienda")
