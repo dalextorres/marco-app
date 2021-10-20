@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		6B7BAA5326E7E05A00150849 /* PaginaLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7BAA5226E7E05A00150849 /* PaginaLoginView.swift */; };
+		6BAE7AED27207AD50036B4D2 /* MarcoBoletosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAE7AEC27207AD50036B4D2 /* MarcoBoletosView.swift */; };
+		6BAE7AEF27207BA50036B4D2 /* UrlWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAE7AEE27207BA50036B4D2 /* UrlWebView.swift */; };
+		6BAE7AF127207D630036B4D2 /* MarcoTiendaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAE7AF027207D630036B4D2 /* MarcoTiendaView.swift */; };
 		A51A9EAC26E5D306003213EC /* PaginaInicioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51A9EAB26E5D306003213EC /* PaginaInicioView.swift */; };
 		A51A9EB026E5D6AE003213EC /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51A9EAF26E5D6AE003213EC /* CardView.swift */; };
 		E64642A626E67F8D005C3DCD /* RestauranteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64642A526E67F8D005C3DCD /* RestauranteView.swift */; };
@@ -36,6 +39,9 @@
 
 /* Begin PBXFileReference section */
 		6B7BAA5226E7E05A00150849 /* PaginaLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginaLoginView.swift; sourceTree = "<group>"; };
+		6BAE7AEC27207AD50036B4D2 /* MarcoBoletosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarcoBoletosView.swift; sourceTree = "<group>"; };
+		6BAE7AEE27207BA50036B4D2 /* UrlWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlWebView.swift; sourceTree = "<group>"; };
+		6BAE7AF027207D630036B4D2 /* MarcoTiendaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarcoTiendaView.swift; sourceTree = "<group>"; };
 		A51A9EAB26E5D306003213EC /* PaginaInicioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginaInicioView.swift; sourceTree = "<group>"; };
 		A51A9EAF26E5D6AE003213EC /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		E64642A526E67F8D005C3DCD /* RestauranteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestauranteView.swift; sourceTree = "<group>"; };
@@ -158,6 +164,7 @@
 				E6B9331826EA7C6A00DD1F1D /* TopToolbarView.swift */,
 				E650490326E9284900593255 /* WebView.swift */,
 				FED8C38926E8724F0003086B /* NavApperanceModifier.swift */,
+				6BAE7AEE27207BA50036B4D2 /* UrlWebView.swift */,
 				E6D1948226E2A96E001BFA02 /* Assets.xcassets */,
 				E6D1948726E2A96E001BFA02 /* Info.plist */,
 				E6D1948426E2A96E001BFA02 /* Preview Content */,
@@ -184,6 +191,8 @@
 				FE851AAB26EC07670095FA77 /* VisitasMenuView.swift */,
 				FE851AAD26EC23430095FA77 /* VisitasGuiadasView.swift */,
 				FE851AAF26EC2E850095FA77 /* RecuadroVisita.swift */,
+				6BAE7AEC27207AD50036B4D2 /* MarcoBoletosView.swift */,
+				6BAE7AF027207D630036B4D2 /* MarcoTiendaView.swift */,
 			);
 			path = Museo;
 			sourceTree = "<group>";
@@ -264,6 +273,7 @@
 				FE851AB026EC2E850095FA77 /* RecuadroVisita.swift in Sources */,
 				E6F56C8026E7CBE90051F30D /* MenuView.swift in Sources */,
 				E6F56C8226E7CBFB0051F30D /* ReservaMesaView.swift in Sources */,
+				6BAE7AEF27207BA50036B4D2 /* UrlWebView.swift in Sources */,
 				FED8C38C26E89F6C0003086B /* CursosView.swift in Sources */,
 				FED8C38826E8720E0003086B /* RecorridoVirualView.swift in Sources */,
 				FE851AAE26EC23430095FA77 /* VisitasGuiadasView.swift in Sources */,
@@ -281,6 +291,8 @@
 				A51A9EAC26E5D306003213EC /* PaginaInicioView.swift in Sources */,
 				FED8C38426E871B00003086B /* BotonImagen.swift in Sources */,
 				E65EB1AF270C020600E1B5BD /* LoginViewModel.swift in Sources */,
+				6BAE7AF127207D630036B4D2 /* MarcoTiendaView.swift in Sources */,
+				6BAE7AED27207AD50036B4D2 /* MarcoBoletosView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
