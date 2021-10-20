@@ -34,80 +34,11 @@ struct RecorridoVirtualView: View {
                     .font(.largeTitle)
                     .fontWeight(.bold)
                 
-                ZStack{
-                    Image("image 16")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width:400 ,height: 240)
-                        .shadow(radius: 10)
-                    
-                    VStack {
-                        Text("NOMBRE DE OBRA")
-                            .font(.largeTitle)
-                            .fontWeight(.bold)
-                            .frame(width: 360, alignment: .leading)
-                            .foregroundColor(Color("Blanco"))
-                            .multilineTextAlignment(.center)
-                        
-                        Text("AUTOR")
-                            .font(.title)
-                            .frame(width: 360, alignment: .leading)
-                            .foregroundColor(Color("Blanco"))
-                            .multilineTextAlignment(.center)
-                        
-                        Spacer()
-                    }
-                }
+                ExhibicionView(img: "exhib_1", name: "INDEX", author: "MARCO y FFProjects")
                 
-                ZStack{
-                    Image("image 16")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width:400 ,height: 240)
-                        .shadow(radius: 10)
-                    
-                    VStack {
-                        Text("NOMBRE DE OBRA")
-                            .font(.largeTitle)
-                            .fontWeight(.bold)
-                            .frame(width: 360, alignment: .leading)
-                            .foregroundColor(Color("Blanco"))
-                            .multilineTextAlignment(.center)
-                        
-                        Text("AUTOR")
-                            .font(.title)
-                            .frame(width: 360, alignment: .leading)
-                            .foregroundColor(Color("Blanco"))
-                            .multilineTextAlignment(.center)
-                        
-                        Spacer()
-                    }
-                }
+                ExhibicionView(img: "exhib_2", name: "La poética del Regreso", author: "Mario García Torres")
                 
-                ZStack{
-                    Image("image 16")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width:400 ,height: 240)
-                        .shadow(radius: 10)
-                    
-                    VStack {
-                        Text("NOMBRE DE OBRA")
-                            .font(.largeTitle)
-                            .fontWeight(.bold)
-                            .frame(width: 360, alignment: .leading)
-                            .foregroundColor(Color("Blanco"))
-                            .multilineTextAlignment(.center)
-                        
-                        Text("AUTOR")
-                            .font(.title)
-                            .frame(width: 360, alignment: .leading)
-                            .foregroundColor(Color("Blanco"))
-                            .multilineTextAlignment(.center)
-                        
-                        Spacer()
-                    }
-                }
+                ExhibicionView(img: "exhib_3", name: "", author: "Miguel Calderón")
                 
             }
             .navigationBarTitleDisplayMode(.inline)

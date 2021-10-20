@@ -9,7 +9,15 @@ import SwiftUI
 
 struct ReservaMesaView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text("Reservaciones")
+            Text("Télefono")
+            Text("T. +52 (81) 8262.4562, 63 y 64")
+            Text("Email")
+            Text("eventos@marco.org.mx")
+            Text("Dirección")
+            Text("Zuazua y Jardón S/N, Centro. Monterrey, N.L., México. 64000")
+        }
     }
 }
 

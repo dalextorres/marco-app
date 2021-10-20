@@ -31,4 +31,12 @@ class LoginViewModel : ObservableObject {
         
     }
     
+    func logout() {
+        if(isLoggedIn) {
+            DispatchQueue.main.async {
+                self.isLoggedIn = false
+            }
+        }
+    }
+    
 }

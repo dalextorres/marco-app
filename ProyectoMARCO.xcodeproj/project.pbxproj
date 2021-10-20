@@ -10,13 +10,14 @@
 		6B7BAA5326E7E05A00150849 /* PaginaLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7BAA5226E7E05A00150849 /* PaginaLoginView.swift */; };
 		A51A9EAC26E5D306003213EC /* PaginaInicioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51A9EAB26E5D306003213EC /* PaginaInicioView.swift */; };
 		A51A9EB026E5D6AE003213EC /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51A9EAF26E5D6AE003213EC /* CardView.swift */; };
+		E62D3B27271F449F00217E76 /* ExhibicionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62D3B26271F449F00217E76 /* ExhibicionView.swift */; };
+		E64019E9271DDBA900E42E9F /* PaginaAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64019E8271DDBA900E42E9F /* PaginaAccountView.swift */; };
 		E64642A626E67F8D005C3DCD /* RestauranteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64642A526E67F8D005C3DCD /* RestauranteView.swift */; };
 		E650490426E9284900593255 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E650490326E9284900593255 /* WebView.swift */; };
 		E65EB1AF270C020600E1B5BD /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65EB1AE270C020600E1B5BD /* LoginViewModel.swift */; };
 		E65EB1B2270C031800E1B5BD /* AuthWebServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65EB1B1270C031800E1B5BD /* AuthWebServices.swift */; };
 		E66ACD50271915F2004FEE50 /* PaginaSignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66ACD4F271915F2004FEE50 /* PaginaSignupView.swift */; };
 		E66ACD5227191656004FEE50 /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66ACD5127191656004FEE50 /* SignupViewModel.swift */; };
-		E6B9331926EA7C6A00DD1F1D /* TopToolbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B9331826EA7C6A00DD1F1D /* TopToolbarView.swift */; };
 		E6D1947F26E2A96B001BFA02 /* ProyectoMARCOApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D1947E26E2A96B001BFA02 /* ProyectoMARCOApp.swift */; };
 		E6D1948126E2A96B001BFA02 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D1948026E2A96B001BFA02 /* MainView.swift */; };
 		E6D1948326E2A96E001BFA02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6D1948226E2A96E001BFA02 /* Assets.xcassets */; };
@@ -38,13 +39,14 @@
 		6B7BAA5226E7E05A00150849 /* PaginaLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginaLoginView.swift; sourceTree = "<group>"; };
 		A51A9EAB26E5D306003213EC /* PaginaInicioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginaInicioView.swift; sourceTree = "<group>"; };
 		A51A9EAF26E5D6AE003213EC /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		E62D3B26271F449F00217E76 /* ExhibicionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExhibicionView.swift; sourceTree = "<group>"; };
+		E64019E8271DDBA900E42E9F /* PaginaAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginaAccountView.swift; sourceTree = "<group>"; };
 		E64642A526E67F8D005C3DCD /* RestauranteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestauranteView.swift; sourceTree = "<group>"; };
 		E650490326E9284900593255 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		E65EB1AE270C020600E1B5BD /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		E65EB1B1270C031800E1B5BD /* AuthWebServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthWebServices.swift; sourceTree = "<group>"; };
 		E66ACD4F271915F2004FEE50 /* PaginaSignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginaSignupView.swift; sourceTree = "<group>"; };
 		E66ACD5127191656004FEE50 /* SignupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewModel.swift; sourceTree = "<group>"; };
-		E6B9331826EA7C6A00DD1F1D /* TopToolbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TopToolbarView.swift; path = ProyectoMARCO/TopToolbarView.swift; sourceTree = SOURCE_ROOT; };
 		E6D1947B26E2A96B001BFA02 /* ProyectoMARCO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProyectoMARCO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6D1947E26E2A96B001BFA02 /* ProyectoMARCOApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProyectoMARCOApp.swift; sourceTree = "<group>"; };
 		E6D1948026E2A96B001BFA02 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -90,6 +92,14 @@
 				A51A9EAF26E5D6AE003213EC /* CardView.swift */,
 			);
 			path = PaginaInicio;
+			sourceTree = "<group>";
+		};
+		E64019E7271DDB9A00E42E9F /* PaginaAccount */ = {
+			isa = PBXGroup;
+			children = (
+				E64019E8271DDBA900E42E9F /* PaginaAccountView.swift */,
+			);
+			path = PaginaAccount;
 			sourceTree = "<group>";
 		};
 		E64642A426E67F7E005C3DCD /* Restaurante */ = {
@@ -146,6 +156,7 @@
 		E6D1947D26E2A96B001BFA02 /* ProyectoMARCO */ = {
 			isa = PBXGroup;
 			children = (
+				E64019E7271DDB9A00E42E9F /* PaginaAccount */,
 				E66ACD4E271915D8004FEE50 /* PaginaSignup */,
 				E65EB1B0270C02FC00E1B5BD /* Services */,
 				E65EB1AD270C019E00E1B5BD /* ViewModel */,
@@ -155,7 +166,6 @@
 				E64642A426E67F7E005C3DCD /* Restaurante */,
 				E6D1947E26E2A96B001BFA02 /* ProyectoMARCOApp.swift */,
 				E6D1948026E2A96B001BFA02 /* MainView.swift */,
-				E6B9331826EA7C6A00DD1F1D /* TopToolbarView.swift */,
 				E650490326E9284900593255 /* WebView.swift */,
 				FED8C38926E8724F0003086B /* NavApperanceModifier.swift */,
 				E6D1948226E2A96E001BFA02 /* Assets.xcassets */,
@@ -184,6 +194,7 @@
 				FE851AAB26EC07670095FA77 /* VisitasMenuView.swift */,
 				FE851AAD26EC23430095FA77 /* VisitasGuiadasView.swift */,
 				FE851AAF26EC2E850095FA77 /* RecuadroVisita.swift */,
+				E62D3B26271F449F00217E76 /* ExhibicionView.swift */,
 			);
 			path = Museo;
 			sourceTree = "<group>";
@@ -257,7 +268,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E6B9331926EA7C6A00DD1F1D /* TopToolbarView.swift in Sources */,
 				6B7BAA5326E7E05A00150849 /* PaginaLoginView.swift in Sources */,
 				E650490426E9284900593255 /* WebView.swift in Sources */,
 				FE851AAC26EC07670095FA77 /* VisitasMenuView.swift in Sources */,
@@ -268,6 +278,7 @@
 				FED8C38826E8720E0003086B /* RecorridoVirualView.swift in Sources */,
 				FE851AAE26EC23430095FA77 /* VisitasGuiadasView.swift in Sources */,
 				E6D1948126E2A96B001BFA02 /* MainView.swift in Sources */,
+				E64019E9271DDBA900E42E9F /* PaginaAccountView.swift in Sources */,
 				FED8C38626E871E00003086B /* PaginaMuseoView.swift in Sources */,
 				E6D1948126E2A96B001BFA02 /* MainView.swift in Sources */,
 				E64642A626E67F8D005C3DCD /* RestauranteView.swift in Sources */,
@@ -281,6 +292,7 @@
 				A51A9EAC26E5D306003213EC /* PaginaInicioView.swift in Sources */,
 				FED8C38426E871B00003086B /* BotonImagen.swift in Sources */,
 				E65EB1AF270C020600E1B5BD /* LoginViewModel.swift in Sources */,
+				E62D3B27271F449F00217E76 /* ExhibicionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

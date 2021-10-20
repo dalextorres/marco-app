@@ -47,11 +47,21 @@ struct RestauranteView: View {
                 })
         }
         .navigationBarTitleDisplayMode(.inline)
-        .toolbar(content: {
-            ToolbarItem(placement: .principal, content: {
-                TopToolbarView()
-            })
-        })
+        .toolbar {
+            ToolbarItem(placement: .principal) {
+                Image("LogoMarco")
+                    .resizable()
+                    .frame(width: CGFloat(30), height: CGFloat(30), alignment: .center)
+            }
+            
+            ToolbarItem(placement: .navigationBarTrailing) {
+                NavigationLink(destination: PaginaAccountView(), label: {
+                    Image(systemName: "person.fill")
+                        .resizable()
+                        .frame(width: CGFloat(30), height: CGFloat(30), alignment: .trailing)
+                }).padding(.trailing, CGFloat(20))
+            }
+        }
     }
 }
 
