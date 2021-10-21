@@ -14,37 +14,39 @@ struct PaginaSignupView: View {
     
     var body: some View {
         VStack{
-            Text("REGISTRATE")
+            Image("LogoMarco")
+            Text("Unete a Marco!")
                 .multilineTextAlignment(.center)
                 .font(.custom("Roboto Mono", size: 25))
                 .padding(.bottom, 30)
-    
+            VStack {
             TextField("Nombre", text: $signupVM.nombre)
-                .padding(4)
+                .padding(15)
                 .background(lightGreyColor)
                 .cornerRadius(5.0)
                 .font(.custom("Roboto Mono", size: 17))
-                .frame(height: 50)
+                .frame(height: 70)
             TextField("Correo electronico", text: $signupVM.email)
-                .padding(4)
+                .padding(15)
                 .background(lightGreyColor)
                 .cornerRadius(5.0)
                 .font(.custom("Roboto Mono", size: 17))
-                .frame(height: 50)
+                .frame(height: 70)
             SecureField("Contrasena", text: $signupVM.password)
-                .padding(4)
+                .padding(15)
                 .background(lightGreyColor)
                 .cornerRadius(5.0)
                 .font(.custom("Roboto Mono", size: 17))
-                .frame(height: 50)
-            
+                .frame(height: 70)
+            }
+            .padding(.horizontal, 20)
             Button(action: {
                 signupVM.signup()
             }, label: {
-                Text("SIGNUP")
+                Text("Registrarse")
                     .foregroundColor(.white)
-                    .padding(.horizontal, 20)
-                    .padding(.vertical, 5)
+                    .padding(.horizontal, 30)
+                    .padding(.vertical, 10)
                     .font(.custom("Roboto Mono", size: 19))
                 
             })
@@ -71,5 +73,6 @@ struct PaginaSignupView: View {
 struct PaginaSignupView_Previews: PreviewProvider {
     static var previews: some View {
         PaginaSignupView()
+            .environmentObject(SignupViewModel())
     }
 }
