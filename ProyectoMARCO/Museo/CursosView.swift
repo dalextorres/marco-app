@@ -17,80 +17,87 @@ struct CursosView: View {
                     .frame(height: 80)
                     .padding()
                 
-                ZStack{
-                    Image("image 12")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width:400 ,height: 240)
-                        .shadow(radius: 10)
-                    
-                    VStack {
-                        Text("NOMBRE DE CURSO")
-                            .font(.largeTitle)
-                            .fontWeight(.bold)
-                            .frame(width: 360, alignment: .leading)
-                            .foregroundColor(Color("Blanco"))
-                            .multilineTextAlignment(.center)
-                        
-                        Text("FECHA")
-                            .font(.title)
-                            .frame(width: 360, alignment: .leading)
-                            .foregroundColor(Color("Blanco"))
-                            .multilineTextAlignment(.center)
-                        
-                        Spacer()
-                    }
-                }
                 
-                ZStack{
-                    Image("image 12")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width:400 ,height: 240)
-                        .shadow(radius: 10)
-                    
-                    VStack {
-                        Text("NOMBRE DE CURSO")
-                            .font(.largeTitle)
-                            .fontWeight(.bold)
-                            .frame(width: 360, alignment: .leading)
-                            .foregroundColor(Color("Blanco"))
-                            .multilineTextAlignment(.center)
+                NavigationLink(destination: CursoDetailView(url: "https://www.marco.org.mx//inscripciones-pinturaydibujo/"), label: {
+                    ZStack{
+                        Image("img_pintura")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width:400 ,height: 240)
+                            .shadow(radius: 10)
                         
-                        Text("FECHA")
-                            .font(.title)
-                            .frame(width: 360, alignment: .leading)
-                            .foregroundColor(Color("Blanco"))
-                            .multilineTextAlignment(.center)
-                        
-                        Spacer()
+                        VStack {
+                            Text("PINTURA Y DIBUJO")
+                                .font(.largeTitle)
+                                .fontWeight(.bold)
+                                .frame(width: 360, alignment: .leading)
+                                .foregroundColor(Color("Blanco"))
+                                .multilineTextAlignment(.center)
+                            
+                            Text("PRESENCIAL")
+                                .font(.title)
+                                .frame(width: 360, alignment: .leading)
+                                .foregroundColor(Color("Blanco"))
+                                .multilineTextAlignment(.center)
+                            
+                            Spacer()
+                        }
                     }
-                }
+                })
                 
-                ZStack{
-                    Image("image 12")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width:400 ,height: 240)
-                        .shadow(radius: 10)
-                    
-                    VStack {
-                        Text("NOMBRE DE CURSO")
-                            .font(.largeTitle)
-                            .fontWeight(.bold)
-                            .frame(width: 360, alignment: .leading)
-                            .foregroundColor(Color("Blanco"))
-                            .multilineTextAlignment(.center)
+                NavigationLink(destination: CursoDetailView(url: "https://www.marco.org.mx//inscripciones-fotografia/"), label: {
+                    ZStack{
+                        Image("img_fotografia")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width:400 ,height: 240)
+                            .shadow(radius: 10)
                         
-                        Text("FECHA")
-                            .font(.title)
-                            .frame(width: 360, alignment: .leading)
-                            .foregroundColor(Color("Blanco"))
-                            .multilineTextAlignment(.center)
-                        
-                        Spacer()
+                        VStack {
+                            Text("FOTOGRAFÍA")
+                                .font(.largeTitle)
+                                .fontWeight(.bold)
+                                .frame(width: 360, alignment: .leading)
+                                .foregroundColor(Color("Blanco"))
+                                .multilineTextAlignment(.center)
+                            
+                            Text("PRESENCIAL")
+                                .font(.title)
+                                .frame(width: 360, alignment: .leading)
+                                .foregroundColor(Color("Blanco"))
+                                .multilineTextAlignment(.center)
+                            
+                            Spacer()
+                        }
                     }
-                }
+                })
+                
+                NavigationLink(destination: CursoDetailView(url: "https://www.marco.org.mx//inscripciones-cine/"), label: {
+                    ZStack{
+                        Image("img_cine")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width:400 ,height: 240)
+                            .shadow(radius: 10)
+                        
+                        VStack {
+                            Text("CINE")
+                                .font(.largeTitle)
+                                .fontWeight(.bold)
+                                .frame(width: 360, alignment: .leading)
+                                .foregroundColor(Color("Blanco"))
+                                .multilineTextAlignment(.center)
+                            
+                            Text("PRESENCIAL")
+                                .font(.title)
+                                .frame(width: 360, alignment: .leading)
+                                .foregroundColor(Color("Blanco"))
+                                .multilineTextAlignment(.center)
+                            
+                            Spacer()
+                        }
+                    }
+                })
             }
             .navigationBarTitleDisplayMode(.inline)
             .toolbar(content: {

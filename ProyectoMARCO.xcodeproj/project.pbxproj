@@ -28,6 +28,7 @@
 		E6EDB25C27212568002E1336 /* VideoWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EDB25B27212568002E1336 /* VideoWebView.swift */; };
 		E6EDB25E272125BF002E1336 /* ExhibicionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EDB25D272125BF002E1336 /* ExhibicionDetailView.swift */; };
 		E6EDB26027212A75002E1336 /* RecorreMarcoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EDB25F27212A75002E1336 /* RecorreMarcoView.swift */; };
+		E6EDB2642721308B002E1336 /* CursoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EDB2632721308B002E1336 /* CursoDetailView.swift */; };
 		E6F56C8026E7CBE90051F30D /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F56C7F26E7CBE90051F30D /* MenuView.swift */; };
 		E6F56C8226E7CBFB0051F30D /* ReservaMesaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F56C8126E7CBFB0051F30D /* ReservaMesaView.swift */; };
 		FE851AAC26EC07670095FA77 /* VisitasMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE851AAB26EC07670095FA77 /* VisitasMenuView.swift */; };
@@ -65,6 +66,7 @@
 		E6EDB25B27212568002E1336 /* VideoWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoWebView.swift; sourceTree = "<group>"; };
 		E6EDB25D272125BF002E1336 /* ExhibicionDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExhibicionDetailView.swift; sourceTree = "<group>"; };
 		E6EDB25F27212A75002E1336 /* RecorreMarcoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecorreMarcoView.swift; sourceTree = "<group>"; };
+		E6EDB2632721308B002E1336 /* CursoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CursoDetailView.swift; sourceTree = "<group>"; };
 		E6F56C7F26E7CBE90051F30D /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		E6F56C8126E7CBFB0051F30D /* ReservaMesaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservaMesaView.swift; sourceTree = "<group>"; };
 		FE851AAB26EC07670095FA77 /* VisitasMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitasMenuView.swift; sourceTree = "<group>"; };
@@ -213,6 +215,7 @@
 				6BAE7AF027207D630036B4D2 /* MarcoTiendaView.swift */,
 				E6EDB25D272125BF002E1336 /* ExhibicionDetailView.swift */,
 				E6EDB25F27212A75002E1336 /* RecorreMarcoView.swift */,
+				E6EDB2632721308B002E1336 /* CursoDetailView.swift */,
 			);
 			path = Museo;
 			sourceTree = "<group>";
@@ -296,6 +299,7 @@
 				6BAE7AEF27207BA50036B4D2 /* UrlWebView.swift in Sources */,
 				FED8C38C26E89F6C0003086B /* CursosView.swift in Sources */,
 				E6EDB25C27212568002E1336 /* VideoWebView.swift in Sources */,
+				E6EDB2642721308B002E1336 /* CursoDetailView.swift in Sources */,
 				FED8C38826E8720E0003086B /* RecorridoVirualView.swift in Sources */,
 				FE851AAE26EC23430095FA77 /* VisitasGuiadasView.swift in Sources */,
 				E6D1948126E2A96B001BFA02 /* MainView.swift in Sources */,
