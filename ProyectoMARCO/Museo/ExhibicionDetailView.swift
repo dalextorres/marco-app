@@ -22,18 +22,16 @@ struct ExhibicionDetailView: View {
                     Image(img)
                         .resizable()
                         .scaledToFit()
-                        .opacity(0.3)
-                    HStack {
-                        VStack {
-                            Text(name)
-                                .font(.headline)
-                            Text(author)
-                                .font(.caption)
-                        }
-                    }
+                    
                 }
+                
+                Text(name)
+                    .font(.headline)
+                    .frame(maxWidth: .infinity, alignment: .center)
+                Text(author)
+                    .font(.caption)
                 Text(descripcion)
-                    .multilineTextAlignment(.center)
+                    .frame(maxWidth: .infinity, alignment: .center)
                     .padding()
                 
                 VideoWebView(url: url)
