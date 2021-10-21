@@ -19,85 +19,22 @@ struct CursosView: View {
                 
                 
                 NavigationLink(destination: CursoDetailView(url: "https://www.marco.org.mx//inscripciones-pinturaydibujo/"), label: {
-                    ZStack{
-                        Image("img_pintura")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width:400 ,height: 240)
-                            .shadow(radius: 10)
-                        
-                        VStack {
-                            Text("PINTURA Y DIBUJO")
-                                .font(.largeTitle)
-                                .fontWeight(.bold)
-                                .frame(width: 360, alignment: .leading)
-                                .foregroundColor(Color("Blanco"))
-                                .multilineTextAlignment(.center)
-                            
-                            Text("PRESENCIAL")
-                                .font(.title)
-                                .frame(width: 360, alignment: .leading)
-                                .foregroundColor(Color("Blanco"))
-                                .multilineTextAlignment(.center)
-                            
-                            Spacer()
-                        }
-                    }
-                })
+                        CursoIndivView(image: "img_pintura", curso: "PINTURA Y DIBUJO", tipo: "PRESENCIAL")
+                    })
                 
                 NavigationLink(destination: CursoDetailView(url: "https://www.marco.org.mx//inscripciones-fotografia/"), label: {
-                    ZStack{
-                        Image("img_fotografia")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width:400 ,height: 240)
-                            .shadow(radius: 10)
-                        
-                        VStack {
-                            Text("FOTOGRAFÍA")
-                                .font(.largeTitle)
-                                .fontWeight(.bold)
-                                .frame(width: 360, alignment: .leading)
-                                .foregroundColor(Color("Blanco"))
-                                .multilineTextAlignment(.center)
-                            
-                            Text("PRESENCIAL")
-                                .font(.title)
-                                .frame(width: 360, alignment: .leading)
-                                .foregroundColor(Color("Blanco"))
-                                .multilineTextAlignment(.center)
-                            
-                            Spacer()
-                        }
-                    }
-                })
+                        CursoIndivView(image: "img_fotografia", curso: "FOTOGRAFÍA", tipo: "PRESENCIAL")
+                    })
                 
                 NavigationLink(destination: CursoDetailView(url: "https://www.marco.org.mx//inscripciones-cine/"), label: {
-                    ZStack{
-                        Image("img_cine")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width:400 ,height: 240)
-                            .shadow(radius: 10)
-                        
-                        VStack {
-                            Text("CINE")
-                                .font(.largeTitle)
-                                .fontWeight(.bold)
-                                .frame(width: 360, alignment: .leading)
-                                .foregroundColor(Color("Blanco"))
-                                .multilineTextAlignment(.center)
-                            
-                            Text("PRESENCIAL")
-                                .font(.title)
-                                .frame(width: 360, alignment: .leading)
-                                .foregroundColor(Color("Blanco"))
-                                .multilineTextAlignment(.center)
-                            
-                            Spacer()
-                        }
-                    }
-                })
+                        CursoIndivView(image: "img_cine", curso: "CINE", tipo: "PRESENCIAL")
+                    })
+                NavigationLink(destination: CursoDetailView(url: "https://www.marco.org.mx//inscripciones-cine/"), label: {
+                        CursoIndivView(image: "img_psicologia", curso: "BIENESTAR Y PSICOLOGÍA", tipo: "EN LÍNEA")
+                    })
+                NavigationLink(destination: CursoDetailView(url: "https://www.marco.org.mx//inscripciones-cine/"), label: {
+                        CursoIndivView(image: "img_escultura", curso: "ESCULTURA", tipo: "PRESENCIAL")
+                    })
             }
             .navigationBarTitleDisplayMode(.inline)
             .toolbar(content: {
