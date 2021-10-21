@@ -25,6 +25,9 @@
 		E6D1948126E2A96B001BFA02 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D1948026E2A96B001BFA02 /* MainView.swift */; };
 		E6D1948326E2A96E001BFA02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6D1948226E2A96E001BFA02 /* Assets.xcassets */; };
 		E6D1948626E2A96E001BFA02 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6D1948526E2A96E001BFA02 /* Preview Assets.xcassets */; };
+		E6EDB25C27212568002E1336 /* VideoWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EDB25B27212568002E1336 /* VideoWebView.swift */; };
+		E6EDB25E272125BF002E1336 /* ExhibicionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EDB25D272125BF002E1336 /* ExhibicionDetailView.swift */; };
+		E6EDB26027212A75002E1336 /* RecorreMarcoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EDB25F27212A75002E1336 /* RecorreMarcoView.swift */; };
 		E6F56C8026E7CBE90051F30D /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F56C7F26E7CBE90051F30D /* MenuView.swift */; };
 		E6F56C8226E7CBFB0051F30D /* ReservaMesaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F56C8126E7CBFB0051F30D /* ReservaMesaView.swift */; };
 		FE851AAC26EC07670095FA77 /* VisitasMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE851AAB26EC07670095FA77 /* VisitasMenuView.swift */; };
@@ -59,6 +62,9 @@
 		E6D1948226E2A96E001BFA02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E6D1948526E2A96E001BFA02 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E6D1948726E2A96E001BFA02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6EDB25B27212568002E1336 /* VideoWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoWebView.swift; sourceTree = "<group>"; };
+		E6EDB25D272125BF002E1336 /* ExhibicionDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExhibicionDetailView.swift; sourceTree = "<group>"; };
+		E6EDB25F27212A75002E1336 /* RecorreMarcoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecorreMarcoView.swift; sourceTree = "<group>"; };
 		E6F56C7F26E7CBE90051F30D /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		E6F56C8126E7CBFB0051F30D /* ReservaMesaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservaMesaView.swift; sourceTree = "<group>"; };
 		FE851AAB26EC07670095FA77 /* VisitasMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitasMenuView.swift; sourceTree = "<group>"; };
@@ -178,6 +184,7 @@
 				E6D1948226E2A96E001BFA02 /* Assets.xcassets */,
 				E6D1948726E2A96E001BFA02 /* Info.plist */,
 				E6D1948426E2A96E001BFA02 /* Preview Content */,
+				E6EDB25B27212568002E1336 /* VideoWebView.swift */,
 			);
 			path = ProyectoMARCO;
 			sourceTree = "<group>";
@@ -204,6 +211,8 @@
 				E62D3B26271F449F00217E76 /* ExhibicionView.swift */,
 				6BAE7AEC27207AD50036B4D2 /* MarcoBoletosView.swift */,
 				6BAE7AF027207D630036B4D2 /* MarcoTiendaView.swift */,
+				E6EDB25D272125BF002E1336 /* ExhibicionDetailView.swift */,
+				E6EDB25F27212A75002E1336 /* RecorreMarcoView.swift */,
 			);
 			path = Museo;
 			sourceTree = "<group>";
@@ -277,6 +286,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6EDB26027212A75002E1336 /* RecorreMarcoView.swift in Sources */,
 				6B7BAA5326E7E05A00150849 /* PaginaLoginView.swift in Sources */,
 				E650490426E9284900593255 /* WebView.swift in Sources */,
 				FE851AAC26EC07670095FA77 /* VisitasMenuView.swift in Sources */,
@@ -285,6 +295,7 @@
 				E6F56C8226E7CBFB0051F30D /* ReservaMesaView.swift in Sources */,
 				6BAE7AEF27207BA50036B4D2 /* UrlWebView.swift in Sources */,
 				FED8C38C26E89F6C0003086B /* CursosView.swift in Sources */,
+				E6EDB25C27212568002E1336 /* VideoWebView.swift in Sources */,
 				FED8C38826E8720E0003086B /* RecorridoVirualView.swift in Sources */,
 				FE851AAE26EC23430095FA77 /* VisitasGuiadasView.swift in Sources */,
 				E6D1948126E2A96B001BFA02 /* MainView.swift in Sources */,
@@ -293,6 +304,7 @@
 				E6D1948126E2A96B001BFA02 /* MainView.swift in Sources */,
 				E64642A626E67F8D005C3DCD /* RestauranteView.swift in Sources */,
 				E65EB1B2270C031800E1B5BD /* AuthWebServices.swift in Sources */,
+				E6EDB25E272125BF002E1336 /* ExhibicionDetailView.swift in Sources */,
 				FED8C38A26E8724F0003086B /* NavApperanceModifier.swift in Sources */,
 				E6D1947F26E2A96B001BFA02 /* ProyectoMARCOApp.swift in Sources */,
 				FED8C38226E871800003086B /* AgendaVisitasView.swift in Sources */,
