@@ -10,7 +10,9 @@ struct AgendaVisitasView: View {
     @State private var date = Date()
     @State var nombreVisitante : String
     @State var numeroBoletos : Int
+    @EnvironmentObject var horariosVM : HorariosViewModel
 
+    
     var body: some View {
         VStack {
             Text("AGENDA TU VISITA")
@@ -33,27 +35,28 @@ struct AgendaVisitasView: View {
                 Text("\(numeroBoletos)")
                     .multilineTextAlignment(.trailing)
 
-                Stepper(
-                    "",
-                    value: $numeroBoletos
-                )
-                .padding()
+
 
             }
 
             DatePicker(
                 "Start Date",
-                selection: $date,
+                selection: $horariosVM.date,
                 displayedComponents: [.date]
             )
             .datePickerStyle(GraphicalDatePickerStyle())
 
             ZStack(alignment: .trailing){
-                Image(systemName: "checkmark")
-                    .frame(width: 120, height: 50)
-                    .background(Color("Rosa"))
-                    .foregroundColor(.white)
-                    .clipShape(Rectangle())
+                
+                Button {
+                    
+                    horariosVM.getHorarios()
+                } label: {
+                    Image(systemName: "checkmark")
+                        .frame(width: 120, height: 50)
+                        .background(Color("Rosa"))
+                        .cornerRadius(5)
+                }
             }
 
             Spacer()

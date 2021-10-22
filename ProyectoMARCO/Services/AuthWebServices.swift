@@ -36,7 +36,7 @@ struct SignupResponse: Codable {
 
 class AuthWebService {
     func login(email: String, password: String, completion: @escaping (Result<String, AuthenticationError>) -> Void) {
-        guard let url = URL(string: "http://localhost:4000/users/loginUser") else {
+        guard let url = URL(string: "http://100.24.228.237:10022/users/loginUser") else {
             completion(.failure(.custom(errorMessage: "URL is not Correct")))
             return
         }
@@ -72,7 +72,7 @@ class AuthWebService {
     
     func signup(nombre: String, email: String, password: String, tipo: String, completion: @escaping (Result<String, AuthenticationError>) -> Void) {
         
-        guard let url = URL(string: "http://localhost:4000/users/signupUser") else {
+        guard let url = URL(string: "http://100.24.228.237:100222/users/signupUser") else {
             completion(.failure(.custom(errorMessage: "URL is not Correct")))
             return
         }
