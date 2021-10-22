@@ -11,6 +11,7 @@ struct HorariosDisponibles: View {
     let horarios: [GetHorariosResponse]
     let id_visitante: String
     let fecha: Date
+    let id_guia : String
     @EnvironmentObject var horariosVM : HorariosViewModel
     @State private var showAlert = false
     
@@ -28,6 +29,7 @@ struct HorariosDisponibles: View {
                 horariosVM.numDia = horario.numDia
                 horariosVM.id_visitante = id_visitante
                 horariosVM.date = fecha
+                horariosVM.id_guia = horario.guias[0].id
                 horariosVM.agendarHorario()
                 showAlert = true
             } label: {
