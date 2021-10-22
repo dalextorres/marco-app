@@ -11,9 +11,11 @@ struct AgendaVisitasView: View {
     @State var nombreVisitante : String
     @State var numeroBoletos : Int
     @EnvironmentObject var horariosVM : HorariosViewModel
+    @State private var willMove = false
 
     
     var body: some View {
+       
         VStack {
             Text("AGENDA TU VISITA")
                 .font(.largeTitle)
@@ -27,30 +29,22 @@ struct AgendaVisitasView: View {
             )
             .textFieldStyle(RoundedBorderTextFieldStyle())
             .padding()
-
-            HStack{
-                Text("Numero de boletos:")
-                    .padding()
-
-                Text("\(numeroBoletos)")
-                    .multilineTextAlignment(.trailing)
-
-
-
-            }
-
+            
             DatePicker(
                 "Start Date",
                 selection: $horariosVM.date,
                 displayedComponents: [.date]
             )
             .datePickerStyle(GraphicalDatePickerStyle())
-
+            
             ZStack(alignment: .trailing){
-                
+                NavigationLink(destination: HorariosDisponibles(horarios: horariosVM.horarios, id_visitante: nombreVisitante, fecha: horariosVM.date), isActive: $willMove) {
+                    EmptyView()
+                }
                 Button {
                     
                     horariosVM.getHorarios()
+                    self.willMove = true
                 } label: {
                     Image(systemName: "checkmark")
                         .frame(width: 120, height: 50)
@@ -58,7 +52,7 @@ struct AgendaVisitasView: View {
                         .cornerRadius(5)
                 }
             }
-
+            
             Spacer()
         }
         .navigationBarTitleDisplayMode(.inline)
@@ -69,6 +63,7 @@ struct AgendaVisitasView: View {
                 }
             })
         })
+        
     }
 }
 
