@@ -19,6 +19,8 @@ struct GetHorariosResponseIdCombo: Codable {
 struct GetHorariosResponse: Codable {
     let bloque: Int
     let guias: [GetHorariosResponseIdCombo]
+    let horaInicio: String
+    let numDia: Int
 }
 
 enum ComunicationError: Error{
@@ -27,8 +29,8 @@ enum ComunicationError: Error{
 }
 
 class WebService{
-    func getHorariosDisponibles(date: Date, completion: @escaping (Result<Bool, ComunicationError>) -> Void){
-        guard let url = URL(string: "http://100.24.228.237:10022/agendarVisitas/getHorariosDisponibles") else {
+    func getHorariosDisponibles(date: Date, completion: @escaping (Result<[GetHorariosResponse], ComunicationError>) -> Void){
+        guard let url = URL(string: "http://100.24.228.237:10022/agendarVisita/getHorariosDisponibles") else {
             completion(.failure(.custom(errorMessage: "URL is not Correct")))
             return
         }
@@ -51,24 +53,18 @@ class WebService{
         print(request)
         URLSession.shared.dataTask(with: request) { (data, response, error) in
             
-            guard let data = data, error == nil else {
-                completion(.failure(.custom(errorMessage: "No data")))
-                return
-            }
             
-            guard let GetHorariosResponse = try? JSONDecoder().decode(GetHorariosResponse.self, from: data) else {
-                completion(.failure(.connectionError))
-                return
-            }
             
-            print(data)
+        if let error = error {
+            completion(.failure(.custom(errorMessage: "No Data")))
+            return
+        }
             
-            /*guard let token = AddReservaResponse.success else {
-                completion(.failure(.connectionError))
-                return
-            }*/
-            print(GetHorariosResponse)
-            completion(.success(true))
+        if let data = data {
+            let parsedData = try! JSONDecoder().decode([GetHorariosResponse].self, from: data)
+            completion(.success(parsedData))
+        }
+            
             
             
         }.resume()
