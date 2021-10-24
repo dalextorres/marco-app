@@ -38,7 +38,7 @@ struct AgendaVisitasView: View {
             .datePickerStyle(GraphicalDatePickerStyle())
             
             ZStack(alignment: .trailing){
-                NavigationLink(destination: HorariosDisponibles(horarios: horariosVM.horarios, id_visitante: nombreVisitante, fecha: horariosVM.date), isActive: $willMove) {
+                NavigationLink(destination: HorariosDisponibles(horarios: horariosVM.horarios, id_visitante: nombreVisitante, fecha: horariosVM.date, id_guia: ""), isActive: $willMove	) {
                     EmptyView()
                 }
                 Button {

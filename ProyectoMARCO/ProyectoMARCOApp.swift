@@ -16,7 +16,7 @@ struct ProyectoMARCOApp: App {
     
     var body: some Scene {
         WindowGroup {
-            if(!loginVM.isLoggedIn) {
+            if(loginVM.isLoggedIn) {
                 MainView()
                     .environmentObject(loginVM)
                     .environmentObject(horariosVM)
